@@ -4,7 +4,7 @@
   
 This is a grocery store data generator for emulating real-time POS transactions and sending them to either Azure Event Hubs or Apache Kafka (test with Azure HDInsight Kafka). Using modified datasets based on the ones provided by the [Open Grocery Database Project](http://www.grocery.com/open-grocery-database-project/), the scripts do the following:  
 ### Scripts  
-- `batchSalesGenerator.py`: This is a configurable script that can be used to generate montly transaction data for a variable number of stores. By changing the date ranges and months in the script and configuring the storedata.csv to add or subtract the number of stores the script can generate different amounts of data for different time ranges. Writes data to local computer running the script.  
+- `batchSalesGenerator.py`: This is a configurable script that can be used to generate monthly transaction data for a variable number of stores. By changing the date ranges and months in the script and configuring the storedata.csv to add or subtract the number of stores the script can generate different amounts of data for different time ranges. Writes data to local computer running the script.  
     - Amount of Data Created Per Store: approx. 181 MB (i.e. 30 stores == 5.4 GB of data generated)    
     - Sample View of the Data:  
 ```
