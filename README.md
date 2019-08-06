@@ -48,12 +48,15 @@ No set up required. Simply open your terminal or Command Prompt and go to the di
 4. Give it a name and give it "Send" permissions and then click "Create"  
 5. Once created, use the name of the Key in `SHARED_ACCESS_KEY_NAME`  
 6. Then click on the key in the Azure Portal to retireve the Primary Key and copy and paste that into `KEY_VALUE`  
-7. Take the name of the Event Hub under the Event Hub Namespace that was created that you want to use and enter it into `EVENT_HUB_NAME`
+7. Take the name of the Event Hub under the Event Hub Namespace that was created that you want to use and enter it into `EVENT_HUB_NAME`  
+8. Navigate to the folder with `salesGenerator.py` and run: `python salesGenerator.py`  
   
 #### Kafka Configuration (Azure HDInsight Kafka-based)  
   
-1. Get IP addresses from two of the worker nodes and enter them into `WORKER_IP_A` and `WORKER_IP_B`  
-2. Then enter the name of the Kafka topic that you want to stream the data to into `TOPIC_NAME`
+1. Run the following command: `pip install kafka`   
+2. Get IP addresses from two of the worker nodes and enter them into `WORKER_IP_A` and `WORKER_IP_B`  
+3. Then enter the name of the Kafka topic that you want to stream the data to into `TOPIC_NAME`  
+4. Navigate to the folder with `salesGenerator.py` and run: `python salesGenerator.py`  
   
 ## TODO
   
