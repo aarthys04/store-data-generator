@@ -34,8 +34,7 @@ transactionID,transactionDate,productID,category,price,brand,productName,zipcode
   
 ### Batch  
   
-No set up required. Simply open your terminal or Command Prompt and go to the directory that houses this repository and run the following:  
-`python batchSalesGenerator.py`  
+No set up required. Simply open your terminal or Command Prompt and go to the directory that houses this repository and run the following: `python batchSalesGenerator.py`  
   
 ### Stream
   
@@ -48,7 +47,8 @@ No set up required. Simply open your terminal or Command Prompt and go to the di
 3. Create a new key by clicking the "+ Add" button near the top of the blade  
 4. Give it a name and give it "Send" permissions and then click "Create"  
 5. Once created, use the name of the Key in `SHARED_ACCESS_KEY_NAME`  
-6. Then click on the key in the Azure Portal to retireve the Primary Key and copy and paste that into `KEY_VALUE`
+6. Then click on the key in the Azure Portal to retireve the Primary Key and copy and paste that into `KEY_VALUE`  
+7. Take the name of the Event Hub under the Event Hub Namespace that was created that you want to use and enter it into `EVENT_HUB_NAME`
   
 #### Kafka Configuration (Azure HDInsight Kafka-based)  
   

@@ -12,6 +12,7 @@ currentDirectory = os.getcwd()
 
 ### EVENT HUB CONFIGURATION
 EVENT_HUB_NAMESPACE = ""
+EVENT_HUB_NAME = ""
 SHARED_ACCESS_KEY_NAME = ""
 KEY_VALUE = ""
 
@@ -91,7 +92,7 @@ for y in range(0,2):
                 # use json.dumps to convert the dictionary to a JSON format
                 s = json.dumps(reading)
                 # send to Azure Event Hub
-                sbs.send_event("samplehub", s)
+                sbs.send_event(EVENT_HUB_NAME, s)
                 print(s)
     else:
         # for each transaction generated
@@ -100,6 +101,7 @@ for y in range(0,2):
             for reading in transaction:
                 s = json.dumps(reading)
                 producer.send(TOPIC_NAME, s)
+                print(s)
     # delay a second
     time.sleep(1)
     # add secodn to timestamp
